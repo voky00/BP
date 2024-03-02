@@ -52,7 +52,6 @@ public class RoundManager : MonoBehaviour
     public GameObject nextPlayerWindow;
     public GameObject Tutorials;
 
-
     void Update()
     {
         if (!tutorialsShown[0])
@@ -388,8 +387,6 @@ public class RoundManager : MonoBehaviour
         }
         players[0].isAi = true;
         ////////////////////////////
-        
-
 
 
         RoundCounter.SetText("Poèet kol: " + round + "/" + Lobby.roundCount);
