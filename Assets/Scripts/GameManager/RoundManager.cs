@@ -378,7 +378,7 @@ public class RoundManager : MonoBehaviour
     {
         
         /////////////////////////////       test
-        Lobby.roundCount = 3;
+        Lobby.roundCount = 10;
         for (int i = 0; i < 2; i++)
         {
             players[i] = new Player();
@@ -395,6 +395,7 @@ public class RoundManager : MonoBehaviour
     {
         if (round != 0) 
         {
+            DiceRoll.gameObject.SetActive(false);
             players[playerOnTurn].Fg[figureOnTurn].transform.position = where.transform.position;
             players[playerOnTurn].Fg[figureOnTurn].studying = true;
             setPositionX(where.x);

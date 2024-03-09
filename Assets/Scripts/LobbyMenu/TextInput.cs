@@ -8,10 +8,14 @@ public class TextInput : MonoBehaviour
     public TMP_InputField[] textInputs = new TMP_InputField[8];
     
 
-    void Start()
+    void Awake()
     {
         for (int i = 0; i < 8; i++)
+        {
             textInputs[i] = transform.GetChild(i).GetComponent<TMP_InputField>();
+            textInputs[i].text = "Hr·Ë " + (i + 1);
+        }
+            
     }
     void Update()
     {

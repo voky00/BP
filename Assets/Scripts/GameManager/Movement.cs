@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UIElements;
@@ -10,6 +12,9 @@ using Random = UnityEngine.Random;
 
 public class Movement : MonoBehaviour
 {
+    public TMP_Text addMoneyText;
+    public TMP_Text removeMoneyText;
+
     public int stepDelay = 300;
 
     byte[] studyField = { 0, 0, 1, 2, 3, 1, 0, 2, 3, 1, 2, 1, 3, 2, 0, 1, 3, 2, 1, 0, 0,
@@ -35,11 +40,11 @@ public class Movement : MonoBehaviour
      { 0,0,0,0,0,0,0,0,0,0,0,0,0 },
      { 0,0,0,0,1,0,0,0,0,1,0,0,0 },
     };
-    public string[] graduationTexts =
+    string[] graduationTexts =
    {
-        "\n\nVysvìdèení\n_____________________\n\n\nDržitel tohoto dokumentu splnil podmínky pro dokonèení základní školy, tudíž má dokonèené\n\nZákladní\nVzdìlání\n\n\n_____________________",
-        "\nMaturitní\nVysvìdšení\n_____________________\n\n\nDržitel tohoto dokumentu úspìšnì absolvoval maturitní zkoužku, tudíž má dokonèené\n\nStøedoškolské\nVzdìlání\n\n\n_____________________",
-        "\nVysokoškolský\nDiplom\n_____________________\n\n\nDržitel tohoto dokumentu úspìšnì vykonal státní závìreèné zkoušky a obhájil diplomovou práci, tudíž má dokonèené\n\nVysokoškolské\nVzdìlání\n\n\n_____________________",
+        "\nVysvìdèení\n_______________________\n\nDržitel tohoto dokumentu splnil podmínky pro dokonèení základní školy, tudíž má dokonèené\n\nZákladní\nVzdìlání\n\n\n\n\n\n_______________________",
+        "\nMaturitní\nVysvìdšení\n_______________________\n\nDržitel tohoto dokumentu úspìšnì absolvoval maturitní zkoužku, tudíž má dokonèené\n\nStøedoškolské\nVzdìlání\n\n\n\n\n\n_______________________",
+        "\nVysokoškolský\nDiplom\n_______________________\n\nDržitel tohoto dokumentu úspìšnì vykonal státní závìreèné zkoušky a obhájil diplomovou práci, tudíž má dokonèené\n\nVysokoškolské\nVzdìlání\n\n\n\n_______________________",
     };
 
     float moveDistance = 0.42f ;
@@ -137,7 +142,11 @@ public class Movement : MonoBehaviour
             figure.positionX++;
             for (int j = 0; j < jobFieldSelary.Length; j++)
                 if (figure.positionX == jobFieldSelary[j])
-                    figure.money += 20000; 
+                {
+                    MoneyPopup(figure, 20000);
+                    figure.money += 20000;
+                }
+                     
 
             if (figure.positionX == 63) figure.positionX = 0;
             await Task.Delay(stepDelay);
@@ -200,6 +209,7 @@ businessMove(int moveCount)
         {
             Destroy(coins[businessField[figure.positionY, figure.positionX]-5]);
             figure.money += 30000;
+            MoneyPopup(figure, 30000);
             businessField[figure.positionY, figure.positionX] = 0;
             Debug.Log("30k coin");
         }
@@ -286,6 +296,7 @@ businessMove(int moveCount)
 
             foreach (Figure p in playersOnBox)
                     p.money += moneyAmount;
+            MoneyPopup(figure, moneyAmount);
             Debug.Log("vip " + moneyAmount);
         }
 
@@ -313,5 +324,20 @@ businessMove(int moveCount)
     {
             figure.transform.position = new Vector3(figure.transform.position.x, figure.transform.position.y, figure.transform.position.z - moveDistance);
     }
+    public void MoneyPopup(Figure figure, int money)
+    {
+        if (money > 0)
+        {
+            addMoneyText.text = "+" + money;
+            Instantiate(addMoneyText, figure.GetComponentInChildren<Canvas>().transform);
+        }   
+        else
+        {
+            removeMoneyText.text = "" + money;
+            Instantiate(removeMoneyText, figure.GetComponentInChildren<Canvas>().transform);
+        }
+            
 
+
+    }
 }

@@ -8,7 +8,7 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.310DEAF1" = ""
+	"last_search.310DEAF1" = "asset store"
 	"OpenInspectorPreview.310DEAF1" = "0"
 	"currentGroup.310DEAF1" = "all"
 }
@@ -62,6 +62,8 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"a"
+	"store:"
 ]
 searchItemFavorites = [
 ]
@@ -72,7 +74,7 @@ expandedQueries = [
 ]
 queryBuilder = false
 ignoredProperties = "id;name;classname;imagecontentshash"
-helperWidgetCurrentArea = "all"
+helperWidgetCurrentArea = "store:"
 disabledIndexers = ""
 minIndexVariations = 2
 findProviderIndexHelper = true

@@ -132,9 +132,6 @@ ScriptsOnlyBuild:
     fullTypeName: Lobby
     methodName: RoundCountChange
   - assembly: Assembly-CSharp
-    fullTypeName: Card
-    methodName: PutOutCard
-  - assembly: Assembly-CSharp
     fullTypeName: Dice
     methodName: selectDice
   - assembly: Assembly-CSharp
@@ -243,6 +240,21 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
   - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.Renderer
     methodName: set_enabled
   - assembly: UnityEngine.CoreModule
@@ -263,6 +275,21 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.Renderer
     methodName: set_enabled
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -529,55 +556,55 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1560}
+      Script: {instanceID: 1562}
     - Class: 114
-      Script: {instanceID: 1602}
+      Script: {instanceID: 1604}
     - Class: 114
-      Script: {instanceID: 1946}
+      Script: {instanceID: 1948}
     - Class: 114
-      Script: {instanceID: 2376}
+      Script: {instanceID: 2378}
     - Class: 114
-      Script: {instanceID: 2598}
+      Script: {instanceID: 2600}
     - Class: 114
-      Script: {instanceID: 2800}
+      Script: {instanceID: 2802}
     - Class: 114
-      Script: {instanceID: 2930}
+      Script: {instanceID: 2932}
     - Class: 114
-      Script: {instanceID: 3086}
+      Script: {instanceID: 3088}
     - Class: 114
-      Script: {instanceID: 3840}
+      Script: {instanceID: 3842}
     - Class: 114
-      Script: {instanceID: 4008}
+      Script: {instanceID: 4010}
     - Class: 114
-      Script: {instanceID: 4126}
+      Script: {instanceID: 4128}
     - Class: 114
-      Script: {instanceID: 4474}
+      Script: {instanceID: 4476}
     - Class: 114
-      Script: {instanceID: 4930}
+      Script: {instanceID: 4932}
     - Class: 114
-      Script: {instanceID: 5008}
+      Script: {instanceID: 5010}
     - Class: 114
-      Script: {instanceID: 5212}
+      Script: {instanceID: 5214}
     - Class: 114
-      Script: {instanceID: 5262}
+      Script: {instanceID: 5264}
     - Class: 114
-      Script: {instanceID: 5438}
+      Script: {instanceID: 5440}
     - Class: 114
-      Script: {instanceID: 5702}
+      Script: {instanceID: 5704}
     - Class: 114
-      Script: {instanceID: 5708}
+      Script: {instanceID: 5710}
     - Class: 114
-      Script: {instanceID: 5754}
+      Script: {instanceID: 5756}
     - Class: 114
-      Script: {instanceID: 6022}
+      Script: {instanceID: 6024}
     - Class: 114
-      Script: {instanceID: 6726}
+      Script: {instanceID: 6728}
     - Class: 114
-      Script: {instanceID: 7556}
+      Script: {instanceID: 7558}
     - Class: 114
-      Script: {instanceID: 7596}
+      Script: {instanceID: 7598}
     - Class: 114
-      Script: {instanceID: 7794}
+      Script: {instanceID: 7796}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -616,53 +643,53 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1560}
+      Script: {instanceID: 1562}
     - Class: 114
-      Script: {instanceID: 1602}
+      Script: {instanceID: 1604}
     - Class: 114
-      Script: {instanceID: 1724}
+      Script: {instanceID: 1726}
     - Class: 114
-      Script: {instanceID: 2180}
+      Script: {instanceID: 2182}
     - Class: 114
-      Script: {instanceID: 2598}
+      Script: {instanceID: 2600}
     - Class: 114
-      Script: {instanceID: 2604}
+      Script: {instanceID: 2606}
     - Class: 114
-      Script: {instanceID: 2800}
+      Script: {instanceID: 2802}
     - Class: 114
-      Script: {instanceID: 3086}
+      Script: {instanceID: 3088}
     - Class: 114
-      Script: {instanceID: 3834}
+      Script: {instanceID: 3836}
     - Class: 114
-      Script: {instanceID: 4052}
+      Script: {instanceID: 4054}
     - Class: 114
-      Script: {instanceID: 4066}
+      Script: {instanceID: 4068}
     - Class: 114
-      Script: {instanceID: 4316}
+      Script: {instanceID: 4318}
     - Class: 114
-      Script: {instanceID: 4828}
+      Script: {instanceID: 4830}
     - Class: 114
-      Script: {instanceID: 4886}
+      Script: {instanceID: 4888}
     - Class: 114
-      Script: {instanceID: 4984}
+      Script: {instanceID: 4986}
     - Class: 114
-      Script: {instanceID: 5008}
+      Script: {instanceID: 5010}
     - Class: 114
-      Script: {instanceID: 5134}
+      Script: {instanceID: 5136}
     - Class: 114
-      Script: {instanceID: 5702}
+      Script: {instanceID: 5704}
     - Class: 114
-      Script: {instanceID: 5750}
+      Script: {instanceID: 5752}
     - Class: 114
-      Script: {instanceID: 6022}
+      Script: {instanceID: 6024}
     - Class: 114
-      Script: {instanceID: 6030}
+      Script: {instanceID: 6032}
     - Class: 114
-      Script: {instanceID: 6138}
+      Script: {instanceID: 6140}
     - Class: 114
-      Script: {instanceID: 6798}
+      Script: {instanceID: 6800}
     - Class: 114
-      Script: {instanceID: 7052}
+      Script: {instanceID: 7054}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128

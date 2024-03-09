@@ -12,7 +12,7 @@ public class Dropdown : MonoBehaviour
     public TMP_Dropdown[] dropdowns = new TMP_Dropdown[8];
     
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
 
 
