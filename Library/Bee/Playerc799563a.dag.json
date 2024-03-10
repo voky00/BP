@@ -144,11 +144,7 @@
         136,
         137,
         138,
-        139,
-        140,
-        141,
-        142,
-        143
+        139
       ],
       "OverwriteOutputs": false,
       "DebugActionIndex": 0
@@ -350,7 +346,7 @@
       "DisplayName": "Writing boot.config_tyr4.info",
       "ActionType": "WriteFile",
       "PayloadOffset": 83,
-      "PayloadLength": 15727,
+      "PayloadLength": 15242,
       "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
       "Inputs": [],
       "Outputs": [
@@ -451,12 +447,8 @@
         "C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.dll",
         "C:/Users/voky/Cesta Životem Beta/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll",
         "C:/Users/voky/Cesta Životem Beta/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll",
-        "C:/Users/voky/Cesta Životem Beta/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll",
         "C:/Users/voky/Cesta Životem Beta/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll",
-        "C:/Users/voky/Cesta Životem Beta/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll",
-        "C:/Users/voky/Cesta Životem Beta/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll",
-        "C:/Users/voky/Cesta Životem Beta/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll",
-        "C:/Users/voky/Cesta Životem Beta/Library/PackageCache/com.unity.visualscripting@1.9.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll",
+        "C:/Users/voky/Cesta Životem Beta/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/netstandard.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Mono.Security.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.ComponentModel.Composition.dll",
@@ -1382,18 +1374,6 @@
       "DebugActionIndex": 89
     },
     {
-      "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/UnityEngine.UI.dll",
-      "DisplayName": "Copying UnityEngine.UI.dll",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Users/voky/Cesta Životem Beta/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll"
-      ],
-      "Outputs": [
-        "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/UnityEngine.UI.dll"
-      ],
-      "DebugActionIndex": 90
-    },
-    {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/Unity.TextMeshPro.dll",
       "DisplayName": "Copying Unity.TextMeshPro.dll",
       "ActionType": "CopyFiles",
@@ -1403,55 +1383,19 @@
       "Outputs": [
         "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/Unity.TextMeshPro.dll"
       ],
+      "DebugActionIndex": 90
+    },
+    {
+      "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/UnityEngine.UI.dll",
+      "DisplayName": "Copying UnityEngine.UI.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "C:/Users/voky/Cesta Životem Beta/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll"
+      ],
+      "Outputs": [
+        "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/UnityEngine.UI.dll"
+      ],
       "DebugActionIndex": 91
-    },
-    {
-      "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/Unity.VisualScripting.Core.dll",
-      "DisplayName": "Copying Unity.VisualScripting.Core.dll",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Users/voky/Cesta Životem Beta/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll"
-      ],
-      "Outputs": [
-        "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/Unity.VisualScripting.Core.dll"
-      ],
-      "DebugActionIndex": 92
-    },
-    {
-      "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/Unity.VisualScripting.State.dll",
-      "DisplayName": "Copying Unity.VisualScripting.State.dll",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Users/voky/Cesta Životem Beta/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll"
-      ],
-      "Outputs": [
-        "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/Unity.VisualScripting.State.dll"
-      ],
-      "DebugActionIndex": 93
-    },
-    {
-      "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/Unity.VisualScripting.Flow.dll",
-      "DisplayName": "Copying Unity.VisualScripting.Flow.dll",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Users/voky/Cesta Životem Beta/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll"
-      ],
-      "Outputs": [
-        "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/Unity.VisualScripting.Flow.dll"
-      ],
-      "DebugActionIndex": 94
-    },
-    {
-      "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll",
-      "DisplayName": "Copying Unity.VisualScripting.Antlr3.Runtime.dll",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Users/voky/Cesta Životem Beta/Library/PackageCache/com.unity.visualscripting@1.9.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
-      ],
-      "Outputs": [
-        "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll"
-      ],
-      "DebugActionIndex": 95
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/netstandard.dll",
@@ -1463,7 +1407,7 @@
       "Outputs": [
         "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/netstandard.dll"
       ],
-      "DebugActionIndex": 96
+      "DebugActionIndex": 92
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/Mono.Security.dll",
@@ -1475,7 +1419,7 @@
       "Outputs": [
         "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/Mono.Security.dll"
       ],
-      "DebugActionIndex": 97
+      "DebugActionIndex": 93
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.ComponentModel.Composition.dll",
@@ -1487,7 +1431,7 @@
       "Outputs": [
         "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.ComponentModel.Composition.dll"
       ],
-      "DebugActionIndex": 98
+      "DebugActionIndex": 94
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.Configuration.dll",
@@ -1499,7 +1443,7 @@
       "Outputs": [
         "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.Configuration.dll"
       ],
-      "DebugActionIndex": 99
+      "DebugActionIndex": 95
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.Core.dll",
@@ -1511,7 +1455,7 @@
       "Outputs": [
         "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.Core.dll"
       ],
-      "DebugActionIndex": 100
+      "DebugActionIndex": 96
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.Data.DataSetExtensions.dll",
@@ -1523,7 +1467,7 @@
       "Outputs": [
         "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.Data.DataSetExtensions.dll"
       ],
-      "DebugActionIndex": 101
+      "DebugActionIndex": 97
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.Data.dll",
@@ -1535,7 +1479,7 @@
       "Outputs": [
         "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.Data.dll"
       ],
-      "DebugActionIndex": 102
+      "DebugActionIndex": 98
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.Drawing.dll",
@@ -1547,7 +1491,7 @@
       "Outputs": [
         "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.Drawing.dll"
       ],
-      "DebugActionIndex": 103
+      "DebugActionIndex": 99
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.EnterpriseServices.dll",
@@ -1559,7 +1503,7 @@
       "Outputs": [
         "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.EnterpriseServices.dll"
       ],
-      "DebugActionIndex": 104
+      "DebugActionIndex": 100
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.IO.Compression.FileSystem.dll",
@@ -1571,7 +1515,7 @@
       "Outputs": [
         "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.IO.Compression.FileSystem.dll"
       ],
-      "DebugActionIndex": 105
+      "DebugActionIndex": 101
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.IO.Compression.dll",
@@ -1583,7 +1527,7 @@
       "Outputs": [
         "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.IO.Compression.dll"
       ],
-      "DebugActionIndex": 106
+      "DebugActionIndex": 102
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.Net.Http.dll",
@@ -1595,7 +1539,7 @@
       "Outputs": [
         "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.Net.Http.dll"
       ],
-      "DebugActionIndex": 107
+      "DebugActionIndex": 103
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.Numerics.dll",
@@ -1607,7 +1551,7 @@
       "Outputs": [
         "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.Numerics.dll"
       ],
-      "DebugActionIndex": 108
+      "DebugActionIndex": 104
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.Runtime.Serialization.dll",
@@ -1619,7 +1563,7 @@
       "Outputs": [
         "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.Runtime.Serialization.dll"
       ],
-      "DebugActionIndex": 109
+      "DebugActionIndex": 105
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.Security.dll",
@@ -1631,7 +1575,7 @@
       "Outputs": [
         "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.Security.dll"
       ],
-      "DebugActionIndex": 110
+      "DebugActionIndex": 106
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.ServiceModel.Internals.dll",
@@ -1643,7 +1587,7 @@
       "Outputs": [
         "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.ServiceModel.Internals.dll"
       ],
-      "DebugActionIndex": 111
+      "DebugActionIndex": 107
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.Transactions.dll",
@@ -1655,7 +1599,7 @@
       "Outputs": [
         "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.Transactions.dll"
       ],
-      "DebugActionIndex": 112
+      "DebugActionIndex": 108
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.Xml.Linq.dll",
@@ -1667,7 +1611,7 @@
       "Outputs": [
         "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.Xml.Linq.dll"
       ],
-      "DebugActionIndex": 113
+      "DebugActionIndex": 109
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.Xml.dll",
@@ -1679,7 +1623,7 @@
       "Outputs": [
         "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.Xml.dll"
       ],
-      "DebugActionIndex": 114
+      "DebugActionIndex": 110
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.dll",
@@ -1691,7 +1635,7 @@
       "Outputs": [
         "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/System.dll"
       ],
-      "DebugActionIndex": 115
+      "DebugActionIndex": 111
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Managed/mscorlib.dll",
@@ -1703,20 +1647,20 @@
       "Outputs": [
         "E:/Downloads/game build/Cesta Životem Beta_Data/Managed/mscorlib.dll"
       ],
-      "DebugActionIndex": 116
+      "DebugActionIndex": 112
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info",
       "DisplayName": "Writing app.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 15899,
+      "PayloadOffset": 15414,
       "PayloadLength": 34,
       "PayloadDebugContentSnippet": "DefaultCompany\nCesta Životem ",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info"
       ],
-      "DebugActionIndex": 117
+      "DebugActionIndex": 113
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/app.info",
@@ -1729,9 +1673,9 @@
         "E:/Downloads/game build/Cesta Životem Beta_Data/app.info"
       ],
       "ToBuildDependencies": [
-        117
+        113
       ],
-      "DebugActionIndex": 118
+      "DebugActionIndex": 114
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta_Data/Resources/unity default resources",
@@ -1743,7 +1687,7 @@
       "Outputs": [
         "E:/Downloads/game build/Cesta Životem Beta_Data/Resources/unity default resources"
       ],
-      "DebugActionIndex": 119
+      "DebugActionIndex": 115
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/Cesta Životem Beta.exe",
@@ -1755,7 +1699,7 @@
       "Outputs": [
         "E:/Downloads/game build/Cesta Životem Beta.exe"
       ],
-      "DebugActionIndex": 120
+      "DebugActionIndex": 116
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll",
@@ -1767,7 +1711,7 @@
       "Outputs": [
         "E:/Downloads/game build/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll"
       ],
-      "DebugActionIndex": 121
+      "DebugActionIndex": 117
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll",
@@ -1779,7 +1723,7 @@
       "Outputs": [
         "E:/Downloads/game build/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll"
       ],
-      "DebugActionIndex": 122
+      "DebugActionIndex": 118
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
@@ -1791,7 +1735,7 @@
       "Outputs": [
         "E:/Downloads/game build/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 123
+      "DebugActionIndex": 119
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
@@ -1803,7 +1747,7 @@
       "Outputs": [
         "E:/Downloads/game build/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 124
+      "DebugActionIndex": 120
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/MonoBleedingEdge/etc/mono/2.0/machine.config",
@@ -1815,7 +1759,7 @@
       "Outputs": [
         "E:/Downloads/game build/MonoBleedingEdge/etc/mono/2.0/machine.config"
       ],
-      "DebugActionIndex": 125
+      "DebugActionIndex": 121
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/MonoBleedingEdge/etc/mono/2.0/settings.map",
@@ -1827,7 +1771,7 @@
       "Outputs": [
         "E:/Downloads/game build/MonoBleedingEdge/etc/mono/2.0/settings.map"
       ],
-      "DebugActionIndex": 126
+      "DebugActionIndex": 122
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/MonoBleedingEdge/etc/mono/2.0/web.config",
@@ -1839,7 +1783,7 @@
       "Outputs": [
         "E:/Downloads/game build/MonoBleedingEdge/etc/mono/2.0/web.config"
       ],
-      "DebugActionIndex": 127
+      "DebugActionIndex": 123
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
@@ -1851,7 +1795,7 @@
       "Outputs": [
         "E:/Downloads/game build/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 128
+      "DebugActionIndex": 124
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
@@ -1863,7 +1807,7 @@
       "Outputs": [
         "E:/Downloads/game build/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 129
+      "DebugActionIndex": 125
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/MonoBleedingEdge/etc/mono/4.0/machine.config",
@@ -1875,7 +1819,7 @@
       "Outputs": [
         "E:/Downloads/game build/MonoBleedingEdge/etc/mono/4.0/machine.config"
       ],
-      "DebugActionIndex": 130
+      "DebugActionIndex": 126
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/MonoBleedingEdge/etc/mono/4.0/settings.map",
@@ -1887,7 +1831,7 @@
       "Outputs": [
         "E:/Downloads/game build/MonoBleedingEdge/etc/mono/4.0/settings.map"
       ],
-      "DebugActionIndex": 131
+      "DebugActionIndex": 127
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/MonoBleedingEdge/etc/mono/4.0/web.config",
@@ -1899,7 +1843,7 @@
       "Outputs": [
         "E:/Downloads/game build/MonoBleedingEdge/etc/mono/4.0/web.config"
       ],
-      "DebugActionIndex": 132
+      "DebugActionIndex": 128
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
@@ -1911,7 +1855,7 @@
       "Outputs": [
         "E:/Downloads/game build/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 133
+      "DebugActionIndex": 129
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
@@ -1923,7 +1867,7 @@
       "Outputs": [
         "E:/Downloads/game build/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 134
+      "DebugActionIndex": 130
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/MonoBleedingEdge/etc/mono/4.5/machine.config",
@@ -1935,7 +1879,7 @@
       "Outputs": [
         "E:/Downloads/game build/MonoBleedingEdge/etc/mono/4.5/machine.config"
       ],
-      "DebugActionIndex": 135
+      "DebugActionIndex": 131
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/MonoBleedingEdge/etc/mono/4.5/settings.map",
@@ -1947,7 +1891,7 @@
       "Outputs": [
         "E:/Downloads/game build/MonoBleedingEdge/etc/mono/4.5/settings.map"
       ],
-      "DebugActionIndex": 136
+      "DebugActionIndex": 132
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/MonoBleedingEdge/etc/mono/4.5/web.config",
@@ -1959,7 +1903,7 @@
       "Outputs": [
         "E:/Downloads/game build/MonoBleedingEdge/etc/mono/4.5/web.config"
       ],
-      "DebugActionIndex": 137
+      "DebugActionIndex": 133
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/MonoBleedingEdge/etc/mono/browscap.ini",
@@ -1971,7 +1915,7 @@
       "Outputs": [
         "E:/Downloads/game build/MonoBleedingEdge/etc/mono/browscap.ini"
       ],
-      "DebugActionIndex": 138
+      "DebugActionIndex": 134
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/MonoBleedingEdge/etc/mono/config",
@@ -1983,7 +1927,7 @@
       "Outputs": [
         "E:/Downloads/game build/MonoBleedingEdge/etc/mono/config"
       ],
-      "DebugActionIndex": 139
+      "DebugActionIndex": 135
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/MonoBleedingEdge/etc/mono/mconfig/config.xml",
@@ -1995,7 +1939,7 @@
       "Outputs": [
         "E:/Downloads/game build/MonoBleedingEdge/etc/mono/mconfig/config.xml"
       ],
-      "DebugActionIndex": 140
+      "DebugActionIndex": 136
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/UnityCrashHandler64.exe",
@@ -2007,7 +1951,7 @@
       "Outputs": [
         "E:/Downloads/game build/UnityCrashHandler64.exe"
       ],
-      "DebugActionIndex": 141
+      "DebugActionIndex": 137
     },
     {
       "Annotation": "CopyFiles E:/Downloads/game build/UnityPlayer.dll",
@@ -2019,7 +1963,7 @@
       "Outputs": [
         "E:/Downloads/game build/UnityPlayer.dll"
       ],
-      "DebugActionIndex": 142
+      "DebugActionIndex": 138
     },
     {
       "Annotation": "Player",
@@ -2137,10 +2081,10 @@
         110,
         111,
         112,
-        113,
         114,
         115,
         116,
+        117,
         118,
         119,
         120,
@@ -2161,14 +2105,10 @@
         135,
         136,
         137,
-        138,
-        139,
-        140,
-        141,
-        142
+        138
       ],
       "OverwriteOutputs": false,
-      "DebugActionIndex": 143
+      "DebugActionIndex": 139
     }
   ],
   "FileSignatures": [
@@ -2369,7 +2309,7 @@
   "EmitDataForBeeWhy": 0,
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 143
+          "Player": 139
         }
 ,  "DefaultNodes": [
     0
