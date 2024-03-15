@@ -11,7 +11,8 @@ public class Card : MonoBehaviour
     public bool movingIn=true;
     public bool movingOut=false;
     public bool rotating = true;
-    private void Update()
+
+    private void FixedUpdate()
     {
         if (card.transform.position == new Vector3(-0.2f, 6f+ offSet, -2f))
             Destroy(card);
@@ -23,19 +24,19 @@ public class Card : MonoBehaviour
         if (rotating)
             if (vertical)
             {
-                card.transform.rotation = Quaternion.RotateTowards(card.transform.rotation, Quaternion.Euler(90, 0, 0), 1);
+                card.transform.rotation = Quaternion.RotateTowards(card.transform.rotation, Quaternion.Euler(90, 0, 0), 2);
                 if (card.transform.rotation == Quaternion.Euler(90, 0, 0))
                     rotating = false;
             }
             else
             {
-                card.transform.rotation = Quaternion.RotateTowards(card.transform.rotation, Quaternion.Euler(90, 0, 90), 1);
+                card.transform.rotation = Quaternion.RotateTowards(card.transform.rotation, Quaternion.Euler(90, 0, 90), 2);
                 if (card.transform.rotation == Quaternion.Euler(90, 0, 90))
                     rotating = false;
             }
 
         if (movingIn)
-            card.transform.position = Vector3.MoveTowards(card.transform.position, new Vector3(-0.2f, 6f + offSet, 0.5f), 0.05f);
+            card.transform.position = Vector3.MoveTowards(card.transform.position, new Vector3(-0.2f, 6f + offSet, 0.5f), 0.1f);
 
         if(movingOut)
             card.transform.position = Vector3.MoveTowards(card.transform.position, new Vector3(-0.2f, 6 + offSet, -2), 0.05f);

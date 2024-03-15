@@ -29,17 +29,17 @@ public class CardManager : MonoBehaviour
     int[] negativeValues = { -30000, -20000, -10000, -5000 };
     string[] positiveCardTexts = 
     {
-        "__________________________________________\n\n\nVyhrál jsi ve sportce 30 000 Kè.\n\n\n\n\n\n\n__________________________________________",
-        "__________________________________________\n\n\nDostal jsi mimoøádné prémie ve vıši 20 000 Kè.\n\n\n\n\n\n__________________________________________",
-        "__________________________________________\n\n\nStát ti dal mimoøádnou podporu za stíené pracovní podmínky ve vıši 10 000 Kè.\n\n\n\n\n__________________________________________",
-        "__________________________________________\n\n\nNa zemi jsi našel 5 000 Kè.\n\n\n\n\n\n\n__________________________________________",
+        "__________________________________________\n\n\nVyhrál jsi ve sportce 30000 Kè.\n\n\n\n\n\n\n__________________________________________",
+        "__________________________________________\n\n\nDostal jsi mimoøádné prémie ve vıši 20000 Kè.\n\n\n\n\n\n__________________________________________",
+        "__________________________________________\n\n\nStát ti dal mimoøádnou podporu za stíené pracovní podmínky ve vıši 10000 Kè.\n\n\n\n\n__________________________________________",
+        "__________________________________________\n\n\nNa zemi jsi našel 5000 Kè.\n\n\n\n\n\n\n__________________________________________",
     };
     string[] negativeCardTexts =
     {
-        "__________________________________________\n\n\nRozbilo se ti auto musíš zaplatit 30 000 Kè za oplavu.\n\n\n\n\n\n__________________________________________",
-        "__________________________________________\n\n\nRozbila se ti lednièka zapla 20 000 Kè oplavu.\n\n\n\n\n\n__________________________________________",
-        "__________________________________________\n\n\nZtratil jsi penìenku ve které jsi mìl 10 000 Kè, poté jsi jí našel ve strátech a nálezech ale peníze byly fuè.\n\n\n\n__________________________________________",
-        "__________________________________________\n\n\nRozbili se ti brıle musíš zaplatit 5 000 Kè za nové.\n\n\n\n\n\n__________________________________________",
+        "__________________________________________\n\n\nRozbilo se ti auto musíš zaplatit 30000 Kè za oplavu.\n\n\n\n\n\n__________________________________________",
+        "__________________________________________\n\n\nRozbila se ti lednièka zapla 20000 Kè oplavu.\n\n\n\n\n\n__________________________________________",
+        "__________________________________________\n\n\nZtratil jsi penìenku ve které jsi mìl 10000 Kè, poté jsi jí našel ve strátech a nálezech ale peníze byly fuè.\n\n\n\n__________________________________________",
+        "__________________________________________\n\n\nRozbili se ti brıle musíš zaplatit 5000 Kè za nové.\n\n\n\n\n\n__________________________________________",
     };
 
    

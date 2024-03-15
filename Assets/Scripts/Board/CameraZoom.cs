@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraZoom : MonoBehaviour
 {
     public Camera cm;
-    public float speed = 0.1f;
+    public float speed = 0.2f;
     public bool cameraZoomIn = false;
 
     bool moving = false;

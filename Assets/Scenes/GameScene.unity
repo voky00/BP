@@ -366,8 +366,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 354, y: -296}
-  m_SizeDelta: {x: 350, y: 145}
+  m_AnchoredPosition: {x: 357, y: -276}
+  m_SizeDelta: {x: 257, y: 172}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &23835166
 MonoBehaviour:
@@ -389,7 +389,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 24fdb43285cc2a84b94ae63698bd53de, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7c856bb2e4679dd4a808661f6df28fe4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -540,16 +540,16 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "<b>Kolob\u011Bh podnik\xE1n\xED</b>\r\n\r\nV podnik\xE1n\xED h\xE1z\xED\u0161
-    po\u010Dtem kostek podle po\u010Dtu vzd\u011Bl\xE1n\xED, n\xE1sledn\u011B podobn\u011B
-    jako ve studiu si vybere\u0161 po\u0159ad\xED, v jak\xE9m chce\u0161 hr\xE1t
-    kostky. M\u016F\u017Ee\u0161 se pohybovat \u010Dty\u0159mi sm\u011Bry. Nesm\xED\u0161
-    se v\u0161ak vracet ve sv\xFDch stop\xE1ch a nem\u016F\u017Ee\u0161 j\xEDt p\u0159es
-    okraj desky.\r\nMus\xED\u0161 se v\u0161ak rozhodovat rychle jeliko\u017E m\xE1\u0161
-    jen minutu na odehr\xE1n\xED, pokud \u010Dasom\xEDra dob\u011Bhne tak si bere\u0161
-    dv\u011B karty \u0161patn\xFDch ud\xE1lost\xED a vr\xE1t\xED\u0161 se na za\u010D\xEDna\u010Di
-    pol\xED\u010Dko.\r\nPokud projde\u0161 smajl\xEDkem l\xED\u017Ee\u0161 si kartu
-    ud\xE1losti, pokud skon\u010D\xED\u0161 na zelen\xE9m \u017Eetonku dostane\u0161
-    od st\xE1tu mimo\u0159\xE1dnou dotaci a \u017Eetonek zmiz\xED.\r\n"
+    po\u010Dtem kostek podle sv\xE9ho vzd\u011Bl\xE1n\xED. N\xE1sledn\u011B si vybere\u0161
+    po\u0159ad\xED, v jak\xE9m chce\u0161 kostky hr\xE1t. M\u016F\u017Ee\u0161 se
+    pohybovat \u010Dty\u0159mi sm\u011Bry, ale nesm\xED\u0161 se vracet ve sv\xFDch
+    stop\xE1ch a nem\u016F\u017Ee\u0161 j\xEDt p\u0159es okraj desky. \nMus\xED\u0161
+    se rozhodovat rychle, proto\u017Ee m\xE1\u0161 jen minutu na odehr\xE1n\xED.
+    Pokud \u010Dasom\xEDra dob\u011Bhne, bere\u0161 si dv\u011B karty \u0161patn\xFDch
+    ud\xE1lost\xED a vr\xE1t\xED\u0161 se na za\u010D\xE1te\u010Dn\xED pol\xED\u010Dko.
+    \nPokud projde\u0161 pol\xED\u010Dkem se smajl\xEDkem, l\xED\u017Ee\u0161 si
+    kartu ud\xE1losti. Pokud skon\u010D\xED\u0161 na zelen\xE9m \u017Eetonku, dostane\u0161
+    od st\xE1tu mimo\u0159\xE1dnou dotaci a \u017Eeton zmiz\xED.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a3eddeefc040d8849a0d65831067d9b3, type: 2}
   m_sharedMaterial: {fileID: -2238194723656953113, guid: a3eddeefc040d8849a0d65831067d9b3, type: 2}
@@ -615,7 +615,7 @@ MonoBehaviour:
   m_margin: {x: -19.265015, y: 0, z: -845.2571, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &26043482
@@ -1488,17 +1488,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Pen\xEDze vyd\u011Bl\xE1v\xE1\u0161 obchodem s ostatn\xEDmi hr\xE1\u010Di,
-    kdy\u017E skon\u010D\xED\u0161 na stejn\xFDm pol\xED\u010Dku jako oni. \r\nJsou
-    dva typy obchod\u016F: <b>b\u011B\u017En\xFD obchod</b> - pokud obchod prob\xEDh\xE1
-    uprost\u0159ed tahu, co\u017E je, kdy\u017E nejsou zahr\xE1ny v\u0161echny kostky
-    a <b>VIP obchod</b> - pokud obchod prob\xEDh\xE1 na konci tahu, co\u017E je,
-    kdy\u017E hr\xE1\u010D nem\xE1 kostky, co by zahr\xE1l\r\nV obou p\u0159\xEDpadech
-    na obchodu vyd\u011Bl\xE1vaj\xED v\u0161ichni z\xFA\u010Dastn\u011Bn\xFD stejn\u011B
-    podle nejvy\u0161\u0161\xEDho vzd\u011Bl\xE1n\xED ze z\xFA\u010Dastn\u011Bn\xFDch
-    figurek podle tabulky na desce vpravo naho\u0159e. V p\u0159\xEDpad\u011B VIP
-    obchodu se h\xE1z\xED kostkami podle po\u010Dtu figurek.\r\nPokud je obchod na
-    pol\xED\u010Dku 2x nebo 3x n\xE1sob\xED se pen\xEDze z obchodu.\r\n Nelze obchodovat
-    na za\u010D\xE1te\u010Dn\xEDm pol\xED\u010Dku.\r\n"
+    kdy\u017E skon\u010D\xED\u0161 na stejn\xE9m pol\xED\u010Dku jako oni. \nExistuj\xED
+    dva typy obchod\u016F: \n<b>b\u011B\u017En\xFD obchod</b> - prob\xEDh\xE1 v pr\u016Fb\u011Bhu
+    tahu, kdy\u017E nejsou zahr\xE1ny v\u0161echny kostky, \na <b>VIP obchod</b>
+    - prob\xEDh\xE1 na konci tahu, kdy\u017E hr\xE1\u010D nem\xE1 kostky k zahr\xE1n\xED.
+    \nV obou p\u0159\xEDpadech vyd\u011Bl\xE1vaj\xED v\u0161ichni \xFA\u010Dastn\xEDci
+    stejn\u011B podle nejvy\u0161\u0161\xEDho vzd\u011Bl\xE1n\xED z\xFA\u010Dastn\u011Bn\xFDch
+    figurek. \nP\u0159i VIP obchodu se h\xE1z\xED kostkami podle po\u010Dtu figurek.
+    \nPokud je obchod na pol\xED\u010Dku ozna\u010Den\xE9m 2x nebo 3x, pen\xEDze
+    z obchodu se n\xE1sob\xED. Nelze obchodovat na za\u010D\xE1te\u010Dn\xEDm pol\xED\u010Dku.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a3eddeefc040d8849a0d65831067d9b3, type: 2}
   m_sharedMaterial: {fileID: -2238194723656953113, guid: a3eddeefc040d8849a0d65831067d9b3, type: 2}
@@ -1564,7 +1562,7 @@ MonoBehaviour:
   m_margin: {x: -19.265015, y: 0, z: -845.2571, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &113808265
@@ -2187,8 +2185,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: -454.9999}
-  m_SizeDelta: {x: 160, y: 50}
+  m_AnchoredPosition: {x: 88.1, y: -454.9999}
+  m_SizeDelta: {x: 183.5466, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &183057037
 MonoBehaviour:
@@ -2390,12 +2388,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "<b>F\xE1ze studia</b>\r\n\r\nKa\u017Ed\xFD tah za\u010D\xEDn\xE1 t\xEDm,
-    \u017Ee hod\xED\u0161 kostkami. Ve f\xE1zi studia m\xE1\u0161 t\u0159i, pot\xE9
-    co hod\xED\u0161 kostky si vybere\u0161, s jakou kostkou chce\u0161 hr\xE1t,
-    tah nekon\u010D\xED, dokud nepou\u017Eije\u0161 v\u0161echny kostky.\r\nVe f\xE1zi
-    studia se sna\u017E\xED\u0161 dos\xE1hnout co nejvy\u0161\u0161\xEDho vzd\u011Bl\xE1n\xED,
-    ale mus\xED\u0161 v\u0161ak postupn\u011B. Sna\u017E se zahr\xE1t kostky tak,
-    abys z\xEDskal v jednom tahu co nejv\xEDce vzd\u011Bl\xE1n\xED.\r\n"
+    \u017Ee hod\xED\u0161 kostkami. Ve f\xE1zi studia m\xE1\u0161 t\u0159i kostky.
+    Pot\xE9, co hod\xED\u0161 kostky, si vybere\u0161, s jakou kostkou chce\u0161
+    hr\xE1t. Tah nekon\u010D\xED, dokud nepou\u017Eije\u0161 v\u0161echny kostky.
+    Ve f\xE1zi studia se sna\u017E\xED\u0161 dos\xE1hnout co nejvy\u0161\u0161\xEDho
+    vzd\u011Bl\xE1n\xED, ale mus\xED\u0161 postupovat postupn\u011B. Sna\u017E se
+    zahr\xE1t kostky tak, aby sis v jednom tahu z\xEDskal co nejv\xEDce vzd\u011Bl\xE1n\xED.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a3eddeefc040d8849a0d65831067d9b3, type: 2}
   m_sharedMaterial: {fileID: -2238194723656953113, guid: a3eddeefc040d8849a0d65831067d9b3, type: 2}
@@ -8179,13 +8177,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>J\xEDt pracovat</b>\r\n\r\nPot\xE9 co dos\xE1hne\u0161 z\xE1kladn\xEDho
-    vzd\u011Bl\xE1n\xED, m\u016F\u017Ee\u0161 se rozhodnout p\u0159edt\xEDm, ne\u017E
-    hod\xED\u0161 kostkami, jestli pude tv\xE1 figurka pracovat.\r\n\rKa\u017Ed\xFD
-    hr\xE1\u010D m\u016F\u017Ee m\xEDt pouze jednu figurku v podnik\xE1n\xED a jednu
-    figurku v zam\u011Bstn\xE1n\xED.\r\nN\xE1sledn\u011B kdy\u017E je tv\xE1 figurka
-    v podnik\xE1n\xED nebo zam\u011Bstn\xE1n\xED m\u016F\u017Ee se kdykoli vr\xE1tit
-    studovat, ale bude j\xED to st\xE1t jeden tah.\r\n"
+  m_text: "<b>J\xEDt pracovat</b>\r\n\r\nPot\xE9, co dos\xE1hne\u0161 z\xE1kladn\xEDho
+    vzd\u011Bl\xE1n\xED, m\u016F\u017Ee\u0161 se p\u0159edt\xEDm, ne\u017E hod\xED\u0161
+    kostkami rozhodnout, jestli pude tv\xE1 figurka pracovat. Ka\u017Ed\xFD hr\xE1\u010D
+    m\u016F\u017Ee m\xEDt pouze jednu figurku v podnik\xE1n\xED a jednu figurku ve
+    zam\u011Bstn\xE1n\xED. Tv\xE1 figurka v podnik\xE1n\xED nebo zam\u011Bstn\xE1n\xED
+    se m\u016F\u017Ee kdykoli vr\xE1tit studovat, ale to j\xED stoj\xED jeden tah.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a3eddeefc040d8849a0d65831067d9b3, type: 2}
   m_sharedMaterial: {fileID: -2238194723656953113, guid: a3eddeefc040d8849a0d65831067d9b3, type: 2}
@@ -8251,7 +8248,7 @@ MonoBehaviour:
   m_margin: {x: -19.265015, y: 0, z: -845.2571, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &778798157
@@ -9526,7 +9523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cm: {fileID: 963194227}
-  speed: 0.1
+  speed: 0.2
   cameraZoomIn: 0
   arrow: {fileID: 692261028}
   listHover: {fileID: 1478575330}
@@ -12692,13 +12689,13 @@ MonoBehaviour:
   m_text: "P\u0159edchoz\xED"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a3eddeefc040d8849a0d65831067d9b3, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -2238194723656953113, guid: a3eddeefc040d8849a0d65831067d9b3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -12755,7 +12752,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1319060237
@@ -14438,7 +14435,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1452903812
@@ -14640,10 +14637,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>V\xFDb\u011Br pozice</b>\r\n\r\nM\xE1\u0161 dv\u011B figurky, vyber
-    si pro ka\u017Edou z nich pol\xED\u010Dko, na kter\xFDm budou za\u010D\xEDnat.
-    Ka\u017Ed\xE1 figurka funguje samostatn\u011B, m\xE1 vlastn\xED pen\xEDze a vlastn\xED
-    vzd\u011Bl\xE1n\xED.\r\n "
+  m_text: "<b>V\xFDb\u011Br pozice</b>\r\n\r\nM\xE1\u0161 dv\u011B figurky. Vyber
+    si pro ka\u017Edou z nich pol\xED\u010Dko, na kter\xE9m za\u010Dnou. Ka\u017Ed\xE1
+    figurka funguje samostatn\u011B, m\xE1 vlastn\xED pen\xEDze a vlastn\xED vzd\u011Bl\xE1n\xED.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a3eddeefc040d8849a0d65831067d9b3, type: 2}
   m_sharedMaterial: {fileID: -2238194723656953113, guid: a3eddeefc040d8849a0d65831067d9b3, type: 2}
@@ -15134,11 +15130,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<b>Kolob\u011Bh zam\u011Bstn\xE1n\xED</b>\r\n\r\nV zam\u011Bstn\xE1n\xED
-    h\xE1z\xED\u0161 po\u010Dtem kostek podle po\u010Dtu vzd\u011Bl\xE1n\xED, n\xE1sledn\u011B
-    se v\u0161echny kostky se\u010Dtou a popojde\u0161 o tolik pol\xED\u010Dek.\r\nKdy\u017E
-    projde\u0161 rohov\xEDm pol\xED\u010Dkem dostane\u0161 v\xFDplatu, kdy\u017E
-    skon\u010D\xED\u0161 na smajl\xEDkovi l\xED\u017Ee\u0161 si kartu dan\xE9ho smajl\xEDka.\r\n"
+  m_text: "<b>Kolob\u011Bh zam\u011Bstn\xE1n\xED</b>\r\n\r\nVe zam\u011Bstn\xE1n\xED
+    h\xE1z\xED\u0161 po\u010Dtem kostek podle sv\xE9ho vzd\u011Bl\xE1n\xED. Pot\xE9
+    se\u010Dte\u0161 hodnoty v\u0161ech kostek a posune\u0161 se o tolik pol\xED\u010Dek.
+    Kdy\u017E projde\u0161 rohov\xFDm pol\xED\u010Dkem, dostane\u0161 v\xFDplatu.
+    Kdy\u017E skon\u010D\xED\u0161 na pol\xED\u010Dku se smajl\xEDkem, l\xED\u017Ee\u0161
+    si kartu dan\xE9ho smajl\xEDka.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a3eddeefc040d8849a0d65831067d9b3, type: 2}
   m_sharedMaterial: {fileID: -2238194723656953113, guid: a3eddeefc040d8849a0d65831067d9b3, type: 2}
@@ -15204,7 +15201,7 @@ MonoBehaviour:
   m_margin: {x: -19.265015, y: 0, z: -845.2571, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1494514233
@@ -15769,7 +15766,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1565230335
@@ -16121,8 +16118,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 362, y: -65}
-  m_SizeDelta: {x: 330, y: 187}
+  m_AnchoredPosition: {x: 351, y: -29}
+  m_SizeDelta: {x: 264, y: 112}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1637021171
 MonoBehaviour:
@@ -16144,7 +16141,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fae13bfb46f8a084a9652e46379636f5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9175c205b25a24b47a6d438c0084f033, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
