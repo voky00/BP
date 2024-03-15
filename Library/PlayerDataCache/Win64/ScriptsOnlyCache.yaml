@@ -16,6 +16,7 @@ ScriptsOnlyBuild:
     - MainMenu
     - Menu
     - Movement
+    - Options
     - RoundManager
     - StudySpawns
     - TextInput
@@ -110,6 +111,9 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
     - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: Options
+    methodName: SetFullScreen
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -123,6 +127,15 @@ ScriptsOnlyBuild:
     fullTypeName: Lobby
     methodName: GameStart
   - assembly: Assembly-CSharp
+    fullTypeName: Options
+    methodName: SetResolution
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
     fullTypeName: Lobby
     methodName: PlayerCountChange
   - assembly: UnityEngine.CoreModule
@@ -132,8 +145,17 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
   - assembly: Assembly-CSharp
+    fullTypeName: Options
+    methodName: SetGraphic
+  - assembly: Assembly-CSharp
     fullTypeName: Lobby
     methodName: RoundCountChange
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: Dice
     methodName: selectDice
@@ -707,6 +729,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3912}
     - Class: 114
       Script: {instanceID: 4158}
+    - Class: 114
+      Script: {instanceID: 40300}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1294,6 +1318,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: CardManager
+  - hash:
+      serializedVersion: 2
+      Hash: 793ac1fbd8eaec88588e154f3cdf26b6
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Options
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

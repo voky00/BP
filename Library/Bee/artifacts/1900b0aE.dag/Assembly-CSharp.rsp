@@ -359,6 +359,7 @@
 "Assets/Scripts/LobbyMenu/Dropdown.cs"
 "Assets/Scripts/LobbyMenu/Lobby.cs"
 "Assets/Scripts/LobbyMenu/MainMenu.cs"
+"Assets/Scripts/LobbyMenu/Options.cs"
 "Assets/Scripts/LobbyMenu/TextInput.cs"
 "Assets/Scripts/LobbyMenu/Toggles.cs"
 "Assets/Scripts/Player/arrow.cs"
