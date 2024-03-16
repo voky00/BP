@@ -15,9 +15,6 @@ public class Dropdown : MonoBehaviour
     void Awake()
     {
 
-
-
-
         for (int i = 0;i < 8; i++)
         {
             dropdowns[i] = transform.GetChild(i).GetComponent<TMP_Dropdown>();

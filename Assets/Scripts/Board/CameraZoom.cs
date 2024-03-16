@@ -13,7 +13,7 @@ public class CameraZoom : MonoBehaviour
     public GameObject arrow;
     public GameObject listHover;
     // Start is called before the first frame update
-    private void Update()
+    private void FixedUpdate()
     { 
         if (!moving) return;
 
@@ -23,7 +23,7 @@ public class CameraZoom : MonoBehaviour
         if (cameraZoomIn)
         {
             
-            if (cm.transform.position == new Vector3(4.6f, 2.5f, 4.4f))
+            if (cm.transform.position == new Vector3(5, 2.5f, 4.4f))
             {
                 arrow.SetActive(true);
                 listHover.SetActive(false);
@@ -50,7 +50,7 @@ public class CameraZoom : MonoBehaviour
     {
         cameraZoomIn = true;
         moving = true;
-        cm.transform.position = Vector3.MoveTowards(cm.transform.position, new Vector3(4.6f, 2.5f, 4.4f), speed);
+        cm.transform.position = Vector3.MoveTowards(cm.transform.position, new Vector3(5, 2.5f, 4.4f), speed);
     }
 
     public void zoomOut() 

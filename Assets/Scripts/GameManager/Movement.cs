@@ -153,10 +153,10 @@ public class Movement : MonoBehaviour
         }
         for (int i = 0;i < jobFieldNegative.Length;i++)
             if (figure.positionX == jobFieldNegative[i])
-                cards.DrawNegativeCard(0); // draw negative card todo
+                cards.DrawNegativeCard(0); 
         for (int i = 0; i < jobFieldPositive.Length; i++)
             if (figure.positionX == jobFieldPositive[i])
-                cards.DrawPositiveCard(); // draw positive card todo
+                cards.DrawPositiveCard(); 
 
         diceToPlay =0;
         diceIsSelected = false;
@@ -164,8 +164,7 @@ public class Movement : MonoBehaviour
         if (diceToPlay == 0) phase = phaseType.end;
         else phase = phaseType.chooseDirection;
     }
-    public async     Task
-businessMove(int moveCount)
+    public async Task businessMove(int moveCount)
     {
         arrowClidked = false;
         Figure figure = players[playerOnTurn].Fg[figureOnTurn];
@@ -196,7 +195,7 @@ businessMove(int moveCount)
             }
             //Debug.Log(businessField[figure.positionY, figure.positionX]);
             if (businessField[figure.positionY, figure.positionX] == 1)
-                cards.DrawNegativeCard(0);     // draw negative card todo                
+                cards.DrawNegativeCard(0);               
 
             await Task.Delay(stepDelay);
         }
@@ -336,8 +335,6 @@ businessMove(int moveCount)
             removeMoneyText.text = "" + money;
             Instantiate(removeMoneyText, figure.GetComponentInChildren<Canvas>().transform);
         }
-            
-
-
+ 
     }
 }

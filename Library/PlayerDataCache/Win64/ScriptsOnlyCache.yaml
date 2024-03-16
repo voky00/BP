@@ -111,9 +111,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
     - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
-  - assembly: Assembly-CSharp
-    fullTypeName: Options
-    methodName: SetFullScreen
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -150,18 +147,21 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Lobby
     methodName: RoundCountChange
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
   - assembly: Assembly-CSharp
-    fullTypeName: Dice
-    methodName: selectDice
+    fullTypeName: Options
+    methodName: SetFullScreen
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: Card
     methodName: PutOutCard
+  - assembly: Assembly-CSharp
+    fullTypeName: Dice
+    methodName: selectDice
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.Renderer
     methodName: set_material
@@ -280,6 +280,15 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
   - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: Options
+    methodName: SetFullScreen
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.Renderer
     methodName: set_enabled
   - assembly: UnityEngine.CoreModule
@@ -387,6 +396,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: RoundManager
     methodName: spawnFigure
+  - assembly: Assembly-CSharp
+    fullTypeName: Options
+    methodName: SetGraphic
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.Renderer
     methodName: set_enabled
@@ -402,6 +414,9 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: Options
+    methodName: SetResolution
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.Renderer
     methodName: set_enabled
@@ -420,6 +435,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: DiceThrower
     methodName: RollDice
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -583,6 +604,10 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1558}
     - Class: 114
+      Script: {instanceID: 1560}
+    - Class: 114
+      Script: {instanceID: 1562}
+    - Class: 114
       Script: {instanceID: 1608}
     - Class: 114
       Script: {instanceID: 1750}
@@ -601,6 +626,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2532}
     - Class: 114
+      Script: {instanceID: 2538}
+    - Class: 114
       Script: {instanceID: 2568}
     - Class: 114
       Script: {instanceID: 2584}
@@ -613,25 +640,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2896}
     - Class: 114
+      Script: {instanceID: 2904}
+    - Class: 114
       Script: {instanceID: 2984}
     - Class: 114
       Script: {instanceID: 3164}
     - Class: 114
-      Script: {instanceID: 3494}
+      Script: {instanceID: 3446}
     - Class: 114
-      Script: {instanceID: 3694}
+      Script: {instanceID: 3496}
     - Class: 114
-      Script: {instanceID: 3854}
+      Script: {instanceID: 3682}
     - Class: 114
-      Script: {instanceID: 3976}
+      Script: {instanceID: 3696}
     - Class: 114
-      Script: {instanceID: 4308}
+      Script: {instanceID: 3856}
     - Class: 114
-      Script: {instanceID: 4356}
+      Script: {instanceID: 3978}
     - Class: 114
-      Script: {instanceID: 4400}
+      Script: {instanceID: 4310}
     - Class: 114
-      Script: {instanceID: 4604}
+      Script: {instanceID: 4358}
+    - Class: 114
+      Script: {instanceID: 4402}
+    - Class: 114
+      Script: {instanceID: 4606}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -720,17 +753,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3004}
     - Class: 114
-      Script: {instanceID: 3554}
+      Script: {instanceID: 3446}
     - Class: 114
-      Script: {instanceID: 3680}
+      Script: {instanceID: 3556}
     - Class: 114
-      Script: {instanceID: 3898}
+      Script: {instanceID: 3682}
     - Class: 114
-      Script: {instanceID: 3912}
+      Script: {instanceID: 3900}
     - Class: 114
-      Script: {instanceID: 4158}
+      Script: {instanceID: 3914}
     - Class: 114
-      Script: {instanceID: 40300}
+      Script: {instanceID: 4160}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1158,6 +1191,12 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 42ec6e0cec1a8a4f5b73f05ad219835e
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Options
+  - hash:
+      serializedVersion: 2
       Hash: 830c3b545f6e6ee60a4cebab90516f2c
     assemblyName: UnityEngine.TestRunner
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -1318,12 +1357,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: CardManager
-  - hash:
-      serializedVersion: 2
-      Hash: 793ac1fbd8eaec88588e154f3cdf26b6
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Options
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

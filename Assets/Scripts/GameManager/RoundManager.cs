@@ -92,7 +92,7 @@ public class RoundManager : MonoBehaviour
     }
 
      void playerTurn()
-    {
+     {
         Figure fg = players[playerOnTurn].Fg[figureOnTurn];
 
         if (fg != null)
@@ -137,7 +137,7 @@ public class RoundManager : MonoBehaviour
                 phase = phaseType.start;
                 break;
         }
-    }
+     }
     void startPhase(Figure fg)
     {
         if (!tutorialsShown[1])
@@ -377,7 +377,7 @@ public class RoundManager : MonoBehaviour
     private void Awake()
     {
         
-        /////////////////////////////       test
+        /*////////////////////////////       test
         Lobby.roundCount = 10;
         for (int i = 0; i < 2; i++)
         {
@@ -386,7 +386,7 @@ public class RoundManager : MonoBehaviour
             players[i].color = i;
         }
         players[0].isAi = true;
-        ////////////////////////////
+        /*///////////////////////////
 
 
         RoundCounter.SetText("Poèet kol: " + round + "/" + Lobby.roundCount);

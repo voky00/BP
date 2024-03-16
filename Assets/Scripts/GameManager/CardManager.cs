@@ -102,8 +102,5 @@ public class CardManager : MonoBehaviour
         
 
     }
-    private void Awake()
-    {
-        //CreateCard(Red, VsTop.transform.position, true, graduationTexts[2]);
-    }
+
 }
