@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static RoundManager;
 
-public class arrow : MonoBehaviour
+public class Arrow : MonoBehaviour
 {
     public Movement.direction direction;
 

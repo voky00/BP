@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Player\DestroyTextAnim.cs" />
     <Compile Include="Assets\Scripts\EndScreen.cs" />
     <Compile Include="Assets\Scripts\Board\CameraZoom.cs" />
+    <Compile Include="Assets\Scripts\Player\Arrow.cs" />
     <Compile Include="Assets\Scripts\GameManager\Menu.cs" />
     <Compile Include="Assets\Scripts\LobbyMenu\Toggles.cs" />
     <Compile Include="Assets\Scripts\LobbyMenu\MainMenu.cs" />
@@ -78,7 +79,6 @@
     <Compile Include="Assets\Scripts\LobbyMenu\TextInput.cs" />
     <Compile Include="Assets\Scripts\Player\Figure.cs" />
     <Compile Include="Assets\Scripts\Board\Card.cs" />
-    <Compile Include="Assets\Scripts\Player\arrow.cs" />
     <Compile Include="Assets\Scripts\GameManager\ColorManager.cs" />
     <Compile Include="Assets\Scripts\GameManager\Timer.cs" />
     <Compile Include="Assets\Scripts\LobbyMenu\Lobby.cs" />

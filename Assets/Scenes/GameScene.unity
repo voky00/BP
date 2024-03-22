@@ -2258,9 +2258,9 @@ RectTransform:
   - {fileID: 1319060235}
   m_Father: {fileID: 2061896639}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -890, y: 102}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 82.10007, y: -443}
   m_SizeDelta: {x: 183.54663, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &183057037
@@ -4015,9 +4015,9 @@ RectTransform:
   - {fileID: 1452903810}
   m_Father: {fileID: 2061896639}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -678.1, y: 102}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 294.0001, y: -443}
   m_SizeDelta: {x: 160, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &389315747
@@ -4357,9 +4357,9 @@ RectTransform:
   - {fileID: 2036473729}
   m_Father: {fileID: 167254764}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -473.09998, y: 101.99997}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 499.0001, y: -443.00003}
   m_SizeDelta: {x: 160, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &404503505
@@ -5109,9 +5109,9 @@ RectTransform:
   - {fileID: 1565230333}
   m_Father: {fileID: 2061896639}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -478.09998, y: 101.99997}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 494.0001, y: -443.00003}
   m_SizeDelta: {x: 160, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &466802759
@@ -6877,9 +6877,9 @@ RectTransform:
   - {fileID: 1643491598}
   m_Father: {fileID: 754255722}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -473.09998, y: 101.99997}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 499.0001, y: -443.00003}
   m_SizeDelta: {x: 160, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &543501958
@@ -7456,10 +7456,10 @@ RectTransform:
   - {fileID: 1096197031}
   m_Father: {fileID: 1511031357}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &598427902
 GameObject:
@@ -9144,9 +9144,9 @@ RectTransform:
   - {fileID: 649123064}
   m_Father: {fileID: 143701530}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -473.09998, y: 101.99997}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 499.0001, y: -443.00003}
   m_SizeDelta: {x: 160, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &752492439
@@ -18203,10 +18203,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 2000, y: 1500}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -19445,27 +19445,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80dc00c63c5fdaf4f87c82945702bf3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextDelay: 2000
+  PlayerInfo: {fileID: 1128490810}
+  JobSpawn: {fileID: 389368812}
+  BusinessSpawn: {fileID: 330965914}
+  gameMenu: {fileID: 1640285330}
+  Tutorials: {fileID: 1758185249}
+  nextPlayerWindow: {fileID: 1322020593}
   PlayerNameText: {fileID: 1399861939}
-  FigureOnTurnText: {fileID: 1750090267}
-  EducationText: {fileID: 1805932589}
   MoneyText: {fileID: 826072871}
   RoundCounter: {fileID: 1423405696}
-  PlayerInfo: {fileID: 1128490810}
+  FigureOnTurnText: {fileID: 1750090267}
+  EducationText: {fileID: 1805932589}
   DiceRoll: {fileID: 1062174706}
   GoToWork: {fileID: 1671972093}
   BackToStudy: {fileID: 2003397489}
   FgPrefab: {fileID: 1822508757130106830, guid: 2de3d7894d759fc4796b331f21d48bae, type: 3}
   colorManager: {fileID: 1664566148}
-  JobSpawn: {fileID: 389368812}
-  BusinessSpawn: {fileID: 330965914}
   mv: {fileID: 1664566149}
+  endSc: {fileID: 1200022913}
   menuShown: 0
   botMoving: 0
-  gameMenu: {fileID: 1640285330}
-  endSc: {fileID: 1200022913}
-  nextPlayerWindow: {fileID: 1322020593}
-  Tutorials: {fileID: 1758185249}
 --- !u!114 &1664566148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19598,7 +19597,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1820, y: 980}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1666077680
 MonoBehaviour:
@@ -20105,9 +20104,9 @@ RectTransform:
   - {fileID: 1436330552}
   m_Father: {fileID: 125020337}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -473.09998, y: 101.99997}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 499, y: -443}
   m_SizeDelta: {x: 160, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1704634629

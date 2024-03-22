@@ -362,7 +362,7 @@
 "Assets/Scripts/LobbyMenu/Options.cs"
 "Assets/Scripts/LobbyMenu/TextInput.cs"
 "Assets/Scripts/LobbyMenu/Toggles.cs"
-"Assets/Scripts/Player/arrow.cs"
+"Assets/Scripts/Player/Arrow.cs"
 "Assets/Scripts/Player/DestroyTextAnim.cs"
 "Assets/Scripts/Player/Figure.cs"
 "Assets/Scripts/Player/Player.cs"

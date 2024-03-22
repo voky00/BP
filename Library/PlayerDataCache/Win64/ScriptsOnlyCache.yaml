@@ -1,11 +1,12 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Arrow
     - CameraZoom
     - Card
     - CardManager
     - ColorManager
-    - DestroiTextAnim
+    - DestroyTextAnim
     - Dice
     - DiceThrower
     - Dropdown
@@ -22,7 +23,6 @@ ScriptsOnlyBuild:
     - TextInput
     - Timer
     - Toggles
-    - arrow
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro:
@@ -157,11 +157,11 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
   - assembly: Assembly-CSharp
-    fullTypeName: Card
-    methodName: PutOutCard
-  - assembly: Assembly-CSharp
     fullTypeName: Dice
     methodName: selectDice
+  - assembly: Assembly-CSharp
+    fullTypeName: Card
+    methodName: PutOutCard
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.Renderer
     methodName: set_material
@@ -169,7 +169,7 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.Renderer
     methodName: set_material
   - assembly: Assembly-CSharp
-    fullTypeName: arrow
+    fullTypeName: Arrow
     methodName: onArrowClick
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.Renderer
@@ -193,7 +193,7 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.Renderer
     methodName: set_material
   - assembly: Assembly-CSharp
-    fullTypeName: arrow
+    fullTypeName: Arrow
     methodName: onArrowClick
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.Renderer
@@ -217,7 +217,7 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.Renderer
     methodName: set_material
   - assembly: Assembly-CSharp
-    fullTypeName: arrow
+    fullTypeName: Arrow
     methodName: onArrowClick
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.Renderer
@@ -241,7 +241,7 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.Renderer
     methodName: set_material
   - assembly: Assembly-CSharp
-    fullTypeName: arrow
+    fullTypeName: Arrow
     methodName: onArrowClick
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.Renderer
@@ -602,37 +602,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1558}
+      Script: {instanceID: 1542}
     - Class: 114
-      Script: {instanceID: 1560}
+      Script: {instanceID: 1544}
     - Class: 114
       Script: {instanceID: 1562}
     - Class: 114
-      Script: {instanceID: 1608}
+      Script: {instanceID: 1564}
     - Class: 114
-      Script: {instanceID: 1750}
+      Script: {instanceID: 1566}
     - Class: 114
-      Script: {instanceID: 1826}
+      Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 1920}
+      Script: {instanceID: 1754}
     - Class: 114
-      Script: {instanceID: 2082}
+      Script: {instanceID: 1830}
     - Class: 114
-      Script: {instanceID: 2124}
+      Script: {instanceID: 2084}
     - Class: 114
-      Script: {instanceID: 2306}
+      Script: {instanceID: 2126}
     - Class: 114
-      Script: {instanceID: 2318}
+      Script: {instanceID: 2308}
     - Class: 114
-      Script: {instanceID: 2532}
+      Script: {instanceID: 2320}
     - Class: 114
-      Script: {instanceID: 2538}
+      Script: {instanceID: 2534}
     - Class: 114
-      Script: {instanceID: 2568}
+      Script: {instanceID: 2540}
     - Class: 114
-      Script: {instanceID: 2584}
+      Script: {instanceID: 2570}
     - Class: 114
-      Script: {instanceID: 2628}
+      Script: {instanceID: 2586}
     - Class: 114
       Script: {instanceID: 2714}
     - Class: 114
@@ -656,15 +656,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3856}
     - Class: 114
-      Script: {instanceID: 3978}
+      Script: {instanceID: 4308}
     - Class: 114
-      Script: {instanceID: 4310}
+      Script: {instanceID: 4356}
     - Class: 114
-      Script: {instanceID: 4358}
+      Script: {instanceID: 4400}
     - Class: 114
-      Script: {instanceID: 4402}
+      Script: {instanceID: 4604}
     - Class: 114
-      Script: {instanceID: 4606}
+      Script: {instanceID: 4608}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -715,33 +715,33 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1558}
-    - Class: 114
-      Script: {instanceID: 1560}
-    - Class: 114
       Script: {instanceID: 1562}
     - Class: 114
-      Script: {instanceID: 1608}
+      Script: {instanceID: 1564}
     - Class: 114
-      Script: {instanceID: 1628}
+      Script: {instanceID: 1566}
     - Class: 114
-      Script: {instanceID: 1714}
+      Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 1800}
+      Script: {instanceID: 1632}
     - Class: 114
-      Script: {instanceID: 1826}
+      Script: {instanceID: 1718}
     - Class: 114
-      Script: {instanceID: 1982}
+      Script: {instanceID: 1804}
     - Class: 114
-      Script: {instanceID: 2112}
+      Script: {instanceID: 1830}
     - Class: 114
-      Script: {instanceID: 2532}
+      Script: {instanceID: 1984}
     - Class: 114
-      Script: {instanceID: 2538}
+      Script: {instanceID: 2114}
     - Class: 114
-      Script: {instanceID: 2568}
+      Script: {instanceID: 2534}
     - Class: 114
-      Script: {instanceID: 2622}
+      Script: {instanceID: 2540}
+    - Class: 114
+      Script: {instanceID: 2570}
+    - Class: 114
+      Script: {instanceID: 2624}
     - Class: 114
       Script: {instanceID: 2714}
     - Class: 114
@@ -763,7 +763,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3914}
     - Class: 114
-      Script: {instanceID: 4160}
+      Script: {instanceID: 4158}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -781,6 +781,18 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 0c38fb2997c8b5f9aed5a9290bd4eae2
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: EndScreen
+  - hash:
+      serializedVersion: 2
+      Hash: eb9aa33aa18aa5f3fef4ff3043015154
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: RoundManager
   - hash:
       serializedVersion: 2
       Hash: 540882762544409cc4530e60db00e951
@@ -877,12 +889,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_FontAsset
-  - hash:
-      serializedVersion: 2
-      Hash: 0c38fb2997c8b5f9aed5a9290bd4eae2
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: EndScreen
   - hash:
       serializedVersion: 2
       Hash: fe4c75203a9743390fe41454f7d841d0
@@ -1005,12 +1011,6 @@ ScriptsOnlyBuild:
     className: Lobby
   - hash:
       serializedVersion: 2
-      Hash: a853c49acb275c6265413c3112eee40f
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: RoundManager
-  - hash:
-      serializedVersion: 2
       Hash: 6ddf94363c6ce4b02d9fdd51290cb0f9
     assemblyName: UnityEngine.TestRunner
     namespaceName: UnityEngine.TestRunner.Utils
@@ -1113,10 +1113,10 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
-      Hash: afd333491a026bf4e2b2ad74fba47765
+      Hash: 2a4d45fd06caaab4727a927abd113244
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: DestroiTextAnim
+    className: DestroyTextAnim
   - hash:
       serializedVersion: 2
       Hash: 20a120e55ad3ab65556328d5fd8309dd
@@ -1287,12 +1287,6 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
-      Hash: 56ee1e21001c6126705eca7f0687696b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: arrow
-  - hash:
-      serializedVersion: 2
       Hash: e7e95903ca66d58e1a7cbd71f824e16d
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -1357,6 +1351,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: CardManager
+  - hash:
+      serializedVersion: 2
+      Hash: f210c992e155e25f3873c0f427bc9c37
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Arrow
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
