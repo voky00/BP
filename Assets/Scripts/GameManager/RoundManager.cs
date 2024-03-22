@@ -9,48 +9,42 @@ using System.Threading.Tasks;
 
 public class RoundManager : MonoBehaviour
 {
-    public int nextDelay = 2000;
     bool taskRunning = false;
-
-    public static int round = 0;
     public static int playerOnTurn = 0;
+    public static bool diceIsSelected = false;
+    public GameObject PlayerInfo;
+    public GameObject JobSpawn;
+    public GameObject BusinessSpawn;
+    public GameObject gameMenu;
+    public GameObject Tutorials;
+    public GameObject nextPlayerWindow;
+    public static int round = 0;
+    public static int diceToPlay = 3;
     public static int figureOnTurn = 0;
+    public static Dice selectedDice;
     public static bool[] tutorialsShown = { false, false, false, false, false };
-    public enum phaseType { start, chooseDirection, moving, end};
+    public enum phaseType { start, chooseDirection, moving, end };
     public static phaseType phase = phaseType.start;
-
+    public static Player[] players = new Player[8];
     public TMP_Text PlayerNameText;
-    public TMP_Text FigureOnTurnText;
-    public TMP_Text EducationText;
     public TMP_Text MoneyText;
     public TMP_Text RoundCounter;
-
-    public GameObject PlayerInfo;
+    public TMP_Text FigureOnTurnText;
+    public TMP_Text EducationText;
 
     public Button DiceRoll;
     public Button GoToWork;
     public Button BackToStudy;
 
     public Figure FgPrefab;
-    public static Player[] players = new Player[8];
     public ColorManager colorManager;
-
-    public static int diceToPlay = 3;
-    public static Dice selectedDice;
-    public static bool diceIsSelected = false;
-
-    public GameObject JobSpawn;
-    public GameObject BusinessSpawn;
-
     public Movement mv;
+    public EndScreen endSc;
 
     public bool menuShown = false;
     public bool botMoving = false;
-    public GameObject gameMenu;
-    public EndScreen endSc;
 
-    public GameObject nextPlayerWindow;
-    public GameObject Tutorials;
+    public static int nextDelay = 2000;
 
     void Update()
     {
