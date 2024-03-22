@@ -81,7 +81,9 @@ public class Movement : MonoBehaviour
             if (canBePlaced && businessField[y, x] == 0)
             {
                 businessField[y, x] =(byte) (4 + coinCount);
-                coins[coinCount-1] = Instantiate(coinPrefab, new Vector3(x * moveDistance + corner.transform.position.x, 0.02f, y * moveDistance + corner.transform.position.z), Quaternion.Euler(90,0,0));
+                coins[coinCount-1] = Instantiate(coinPrefab, 
+                    new Vector3(x * moveDistance + corner.transform.position.x, 
+                    0.02f, y * moveDistance + corner.transform.position.z), Quaternion.Euler(90,0,0));
                 //Debug.Log(x + ", " + y);
                 coinCount--;
             }  
@@ -202,24 +204,39 @@ public class Movement : MonoBehaviour
         diceToPlay--;
         diceIsSelected = false;
 
-        List<Figure> playersOnBox = new List<Figure>();
-
         if (businessField[figure.positionY, figure.positionX] > 4)
         {
-            Destroy(coins[businessField[figure.positionY, figure.positionX]-5]);
+            Destroy(coins[businessField[figure.positionY, figure.positionX] - 5]);
             figure.money += 30000;
             MoneyPopup(figure, 30000);
             businessField[figure.positionY, figure.positionX] = 0;
             Debug.Log("30k coin");
         }
+
+        await BussinesTrade();
+
+
+        if (!players[playerOnTurn].isAi)
+            if (diceToPlay == 0)
+                phase = phaseType.end;
+
+            else phase = phaseType.chooseDirection;
+    }
+
+    async Task BussinesTrade()
+    {
+        Figure figure = players[playerOnTurn].Fg[figureOnTurn];
+        List<Figure> playersOnBox = new List<Figure>();
+
         for (int j = 0; j < Lobby.playerCount; j++)
             for (int k = 0; k < 2; k++)
-            if (players[j].Fg[k].status == Figure.statusType.business && !players[j].Fg[k].studying && players[j].Fg[k].positionX == figure.positionX && players[j].Fg[k].positionY == figure.positionY)
-                playersOnBox.Add(players[j].Fg[k]);
+                if (players[j].Fg[k].status == Figure.statusType.business && !players[j].Fg[k].studying 
+                    && players[j].Fg[k].positionX == figure.positionX && players[j].Fg[k].positionY == figure.positionY)
+                    playersOnBox.Add(players[j].Fg[k]);
         if (playersOnBox.Count > 1 && businessField[figure.positionY, figure.positionX] != 4)
         {
             int edu = 0;
-            foreach (Figure p in playersOnBox) 
+            foreach (Figure p in playersOnBox)
                 if (p.education > edu)
                     edu = p.education;
             int moneyAmount;
@@ -232,58 +249,11 @@ public class Movement : MonoBehaviour
                 for (int i = 0; i < DiceThrower.spawnedDices.Length; i++)
                     if (DiceThrower.spawnedDices[i] != null)
                     {
-                    EventTrigger et = DiceThrower.spawnedDices[i].GetComponent<EventTrigger>();
-                    et.enabled = false;
-                    Debug.Log(i);
-                    }
-
-                int diceValue = 0;
-                for (int i = 0; i < DiceThrower.spawnedDices.Length; i++)
-                    if (DiceThrower.spawnedDices[i] != null)
-                    {
-                        int topFace = DiceThrower.spawnedDices[i].GetComponent<Dice>().value;
-                        diceValue += topFace;
-                        if (topFace == 0)
-                        {
-                            await Task.Delay(100);
-                            i--;
-                        }
+                        EventTrigger et = DiceThrower.spawnedDices[i].GetComponent<EventTrigger>();
+                        et.enabled = false;
                         Debug.Log(i);
                     }
-
-                await Task.Delay(5000);
-                for (int i = 0; i < DiceThrower.spawnedDices.Length; i++)
-                {
-                    Destroy(DiceThrower.spawnedDices[i]);
-                    Debug.Log("x"+i);
-                }
-                    
-
-                if (diceValue < 5) {
-                    if (edu == 1) moneyAmount = 5000;
-                    else if (edu == 2) moneyAmount = 10000;
-                    else moneyAmount = 20000;
-                }
-                else if (diceValue < 7) {
-                    if (edu == 1) moneyAmount = 10000;
-                    else if (edu == 2) moneyAmount = 15000;
-                    else moneyAmount = 25000;
-                }
-                else if (diceValue < 9) {
-                    if (edu == 1) moneyAmount = 15000;
-                    else if (edu == 2) moneyAmount = 20000;
-                    else moneyAmount = 30000;
-                }
-                else if (diceValue < 11) {
-                    if (edu == 1) moneyAmount = 20000;
-                    else if (edu == 2) moneyAmount = 25000;
-                    else moneyAmount = 35000;
-                }
-                else {
-                    if (edu == 1) moneyAmount = 25000;
-                    else if (edu == 2) moneyAmount = 30000;
-                    else moneyAmount = 40000;
-                }  
+                 moneyAmount = await VipTrade(edu);
             }
             else
             {           //bìžný obchod
@@ -291,21 +261,72 @@ public class Movement : MonoBehaviour
                 else if (edu == 2) moneyAmount = 10000;
                 else moneyAmount = 15000;
             }
-            if (businessField[figure.positionY, figure.positionX] > 1 && businessField[figure.positionY, figure.positionX] < 4) moneyAmount *= businessField[figure.positionY, figure.positionX];
+            if (businessField[figure.positionY, figure.positionX] > 1 && businessField[figure.positionY, figure.positionX] < 4) 
+                moneyAmount *= businessField[figure.positionY, figure.positionX];
 
             foreach (Figure p in playersOnBox)
-                    p.money += moneyAmount;
+                p.money += moneyAmount;
             MoneyPopup(figure, moneyAmount);
             Debug.Log("vip " + moneyAmount);
         }
 
+    }
+    async Task<int> VipTrade(int edu)
+    {
+        int moneyAmount;
 
+        int diceValue = 0;
+        for (int i = 0; i < DiceThrower.spawnedDices.Length; i++)
+            if (DiceThrower.spawnedDices[i] != null)
+            {
+                int topFace = DiceThrower.spawnedDices[i].GetComponent<Dice>().value;
+                diceValue += topFace;
+                if (topFace == 0)
+                {
+                    await Task.Delay(100);
+                    i--;
+                }
+                Debug.Log(i);
+            }
 
-        if (!players[playerOnTurn].isAi)
-            if (diceToPlay == 0)
-                phase = phaseType.end;
+        await Task.Delay(5000);
+        for (int i = 0; i < DiceThrower.spawnedDices.Length; i++)
+        {
+            Destroy(DiceThrower.spawnedDices[i]);
+            Debug.Log("x" + i);
+        }
 
-            else phase = phaseType.chooseDirection;
+        if (diceValue < 5)
+        {
+            if (edu == 1) moneyAmount = 5000;
+            else if (edu == 2) moneyAmount = 10000;
+            else moneyAmount = 20000;
+        }
+        else if (diceValue < 7)
+        {
+            if (edu == 1) moneyAmount = 10000;
+            else if (edu == 2) moneyAmount = 15000;
+            else moneyAmount = 25000;
+        }
+        else if (diceValue < 9)
+        {
+            if (edu == 1) moneyAmount = 15000;
+            else if (edu == 2) moneyAmount = 20000;
+            else moneyAmount = 30000;
+        }
+        else if (diceValue < 11)
+        {
+            if (edu == 1) moneyAmount = 20000;
+            else if (edu == 2) moneyAmount = 25000;
+            else moneyAmount = 35000;
+        }
+        else
+        {
+            if (edu == 1) moneyAmount = 25000;
+            else if (edu == 2) moneyAmount = 30000;
+            else moneyAmount = 40000;
+        }
+        return moneyAmount;
     }
     void MoveLeft(Figure figure)
     {

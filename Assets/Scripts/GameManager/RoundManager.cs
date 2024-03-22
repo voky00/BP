@@ -246,76 +246,68 @@ public class RoundManager : MonoBehaviour
             colorManager.SetColor(players[playerOnTurn].Fg[figureOnTurn + 1].GetComponentInChildren<Renderer>(), players[playerOnTurn].color);
             players[playerOnTurn].Fg[figureOnTurn + 1].gameObject.SetActive(false);
 
-            
             figureOnTurn++;
-            NextFigure();
-            
+            NextFigure(); 
         }
         else
+            await BotMove();          
+    }
+    async Task BotMove()
+    {
+        Figure fg = players[playerOnTurn].Fg[figureOnTurn];
+        botMoving = true;
+        diceToPlay = fg.education;
+        int randomDiceValue;
+        int direction;
+        while (diceToPlay != 0)
         {
-            Figure fg = players[playerOnTurn].Fg[figureOnTurn];
-
-            botMoving = true;
-            diceToPlay = fg.education;
-            int randomDiceValue;
-            int direction;
-
-            while (diceToPlay != 0)
+            randomDiceValue = Random.Range(1, 6);
+            //Debug.Log(diceToPlay + ", " + randomDiceValue);
+            bool notMoved = true;
+            while (notMoved)
             {
-                randomDiceValue = Random.Range(1, 6);
-                //Debug.Log(diceToPlay + ", " + randomDiceValue);
-                bool notMoved = true;
-
-                while (notMoved)
+                direction = Random.Range(1, 4);
+                //Debug.Log(direction);
+                switch (direction)
                 {
-                    direction = Random.Range(1, 4);
-                    //Debug.Log(direction);
-
-                    switch (direction)
-                    {
-                        case 1:
-                            if (fg.positionX + randomDiceValue < 13 && Movement.lastDirection != Movement.direction.left)
-                            {
-                                notMoved = false;
-                                Movement.moveDirection = Movement.direction.right;
-                                await mv.businessMove(randomDiceValue);
-                            }
-
-                            break;
-                        case 2:
-                            if (fg.positionX - randomDiceValue >= 0 && Movement.lastDirection != Movement.direction.right)
-                            {
-                                notMoved = false;
-                                Movement.moveDirection = Movement.direction.left;
-                                await mv.businessMove(randomDiceValue);
-                            }
-                            break;
-                        case 3:
-                            if (fg.positionY + randomDiceValue < 13 && Movement.lastDirection != Movement.direction.down)
-                            {
-                                notMoved = false;
-                                Movement.moveDirection = Movement.direction.up;
-                                await mv.businessMove(randomDiceValue);
-                            }
-                            break;
-                        case 4:
-                            if (fg.positionY - randomDiceValue >= 0 && Movement.lastDirection != Movement.direction.up)
-                            {
-                                notMoved = false;
-                                Movement.moveDirection = Movement.direction.down;
-                                await mv.businessMove(randomDiceValue);
-                            }
-                            break;
-                    }
+                    case 1:
+                        if (fg.positionX + randomDiceValue < 13 && Movement.lastDirection != Movement.direction.left)
+                        {
+                            notMoved = false;
+                            Movement.moveDirection = Movement.direction.right;
+                            await mv.businessMove(randomDiceValue);
+                        }
+                    break;
+                    case 2:
+                        if (fg.positionX - randomDiceValue >= 0 && Movement.lastDirection != Movement.direction.right)
+                        {
+                            notMoved = false;
+                            Movement.moveDirection = Movement.direction.left;
+                            await mv.businessMove(randomDiceValue);
+                        }
+                    break;
+                    case 3:
+                        if (fg.positionY + randomDiceValue < 13 && Movement.lastDirection != Movement.direction.down)
+                        {
+                            notMoved = false;
+                            Movement.moveDirection = Movement.direction.up;
+                            await mv.businessMove(randomDiceValue);
+                        }
+                    break;
+                    case 4:
+                        if (fg.positionY - randomDiceValue >= 0 && Movement.lastDirection != Movement.direction.up)
+                        {
+                            notMoved = false;
+                            Movement.moveDirection = Movement.direction.down;
+                            await mv.businessMove(randomDiceValue);
+                        }
+                    break;
                 }
             }
-
-            botMoving = false;
-            figureOnTurn++;
-            NextFigure();
-            
         }
-        
+        botMoving = false;
+        figureOnTurn++;
+        NextFigure();
     }
     public void MoveToBusiness()
     {
@@ -369,9 +361,8 @@ public class RoundManager : MonoBehaviour
             StudySpawns.studySpawns[i].SetActive(true);
     }
     private void Awake()
-    {
-        
-        /*////////////////////////////       test
+    { 
+        /*       test
         Lobby.roundCount = 10;
         for (int i = 0; i < 2; i++)
         {
@@ -380,8 +371,7 @@ public class RoundManager : MonoBehaviour
             players[i].color = i;
         }
         players[0].isAi = true;
-        /*///////////////////////////
-
+        */
 
         RoundCounter.SetText("Poèet kol: " + round + "/" + Lobby.roundCount);
     }

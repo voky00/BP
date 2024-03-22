@@ -11,7 +11,6 @@ public class Timer : MonoBehaviour
     public static bool timerActive = false;
     public TMP_Text timeCounterText;
     public GameObject TimeCounter;
-
     public RoundManager roundManager;
     public CardManager cards;
     private void Update()
@@ -28,7 +27,6 @@ public class Timer : MonoBehaviour
             }
         }
     }
-
     public void SetTimer()
     {
         if (players[playerOnTurn].Fg[figureOnTurn].status == Figure.statusType.business && !players[playerOnTurn].Fg[figureOnTurn].studying)
@@ -45,7 +43,6 @@ public class Timer : MonoBehaviour
         await Task.Delay(500);
         cards.DrawNegativeCard(0.1f);
         roundManager.MoveToBusiness();
-
         TimeCounter.SetActive(false);
         for (int i = 0; i < DiceThrower.spawnedDices.Length; i++)
             if (DiceThrower.spawnedDices[i] != null)
@@ -53,6 +50,5 @@ public class Timer : MonoBehaviour
                 Destroy(DiceThrower.spawnedDices[i]);
             }
         phase = phaseType.end;
-
     }
 }

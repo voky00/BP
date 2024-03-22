@@ -14,17 +14,13 @@ public class CardManager : MonoBehaviour
     public GameObject VsTop;
     public GameObject GoodTop;
     public GameObject BadTop;
-
     public Material Yellow;
     public Material Orange;
     public Material Red;
     public Material Blue;
-
     public Card cardPrefab;
 
     public Movement movement;
-
-
     int[] positiveValues = { 30000, 20000, 10000, 5000 };
     int[] negativeValues = { -30000, -20000, -10000, -5000 };
     string[] positiveCardTexts = 
@@ -98,9 +94,7 @@ public class CardManager : MonoBehaviour
             card.transform.GetChild(0).GetComponent<RectTransform>().sizeDelta = new Vector2(1.1f, 0.6f);
             card.transform.rotation = Quaternion.Euler(270, 0, 90);
             card.vertical = false;
-        }
-        
-
+        }      
     }
 
 }
