@@ -88,8 +88,6 @@ public class Movement : MonoBehaviour
                 coinCount--;
             }  
         }
-
-
     }
 
     public async void studyMove(int moveCount)
@@ -330,19 +328,23 @@ public class Movement : MonoBehaviour
     }
     void MoveLeft(Figure figure)
     {
-            figure.transform.position = new Vector3(figure.transform.position.x - moveDistance, figure.transform.position.y, figure.transform.position.z);
+            figure.transform.position = new Vector3(figure.transform.position.x - moveDistance,
+                figure.transform.position.y, figure.transform.position.z);
     }
     void MoveRight(Figure figure)
     {
-            figure.transform.position = new Vector3(figure.transform.position.x + moveDistance, figure.transform.position.y, figure.transform.position.z);
+            figure.transform.position = new Vector3(figure.transform.position.x + moveDistance,
+                figure.transform.position.y, figure.transform.position.z);
     }
     void MoveUp(Figure figure)
     {
-            figure.transform.position = new Vector3(figure.transform.position.x, figure.transform.position.y, figure.transform.position.z + moveDistance);
+            figure.transform.position = new Vector3(figure.transform.position.x,
+                figure.transform.position.y, figure.transform.position.z + moveDistance);
     }
     void MoveDown(Figure figure)
     {
-            figure.transform.position = new Vector3(figure.transform.position.x, figure.transform.position.y, figure.transform.position.z - moveDistance);
+            figure.transform.position = new Vector3(figure.transform.position.x,
+                figure.transform.position.y, figure.transform.position.z - moveDistance);
     }
     public void MoneyPopup(Figure figure, int money)
     {
