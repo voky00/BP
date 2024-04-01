@@ -264,8 +264,7 @@ public class Movement : MonoBehaviour
 
             foreach (Figure p in playersOnBox)
                 p.money += moneyAmount;
-            MoneyPopup(figure, moneyAmount);
-            Debug.Log("vip " + moneyAmount);
+            MoneyPopup(figure, moneyAmount);           
         }
 
     }
@@ -284,14 +283,12 @@ public class Movement : MonoBehaviour
                     await Task.Delay(100);
                     i--;
                 }
-                Debug.Log(i);
             }
 
         await Task.Delay(5000);
         for (int i = 0; i < DiceThrower.spawnedDices.Length; i++)
         {
             Destroy(DiceThrower.spawnedDices[i]);
-            Debug.Log("x" + i);
         }
 
         if (diceValue < 5)

@@ -29,7 +29,8 @@ public class Timer : MonoBehaviour
     }
     public void SetTimer()
     {
-        if (players[playerOnTurn].Fg[figureOnTurn].status == Figure.statusType.business && !players[playerOnTurn].Fg[figureOnTurn].studying)
+        if (players[playerOnTurn].Fg[figureOnTurn].status == Figure.statusType.business 
+            && !players[playerOnTurn].Fg[figureOnTurn].studying)
         {
             TimeCounter.SetActive(true);
             timerActive = true;
