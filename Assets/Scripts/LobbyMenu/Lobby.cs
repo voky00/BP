@@ -19,6 +19,11 @@ public class Lobby : MonoBehaviour
     public Dropdown colorsInput;
     public Toggles aiToggles;
 
+    private void Awake()
+    {
+            roundCount = 10;
+            playerCount = 2;
+    }
     public void PlayerCountChange()
     {
         playerCount = (playerCountDrop.value + 2);  
@@ -29,6 +34,8 @@ public class Lobby : MonoBehaviour
     }
     public void GameStart()
     {
+       
+
         for (int i = 0; i < 8; i++)
             Destroy(players[i]);
 
